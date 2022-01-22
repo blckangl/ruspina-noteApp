@@ -1,7 +1,7 @@
 <section id="note-input-container">
   <div class="inputs">
     <div class="title-input">
-      <input #noteTitleInput placeholder="title" type="text">
+      <input [(ngModel)]="titleInput" placeholder="title" type="text">
     </div>
     <div class="content-input">
       <input #noteContentInput placeholder="content" type="text">
@@ -9,7 +9,7 @@
   </div>
   <div class="actions">
     <div class="action">
-      <button  (click)="addNote(noteTitleInput.value,noteContentInput.value)">Add</button>
+      <input  [disabled]="titleInput.length==0" (click)="addNote()" value="add" />
     </div>
   </div>
 </section>

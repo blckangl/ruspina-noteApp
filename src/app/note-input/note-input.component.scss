@@ -40,7 +40,8 @@
     .action{
       width: 35px;
       height: 35px;
-      button{
+
+      input{
 text-align: center;
         background-color: var(--primary-color);
         width: 100%;
@@ -49,7 +50,7 @@ text-align: center;
         transition: transform 0.2s ease-in;
         color: white;
       }
-      button:hover{
+      input:hover{
         text-align: center;
         background-color: var(--primary-color);
         width: 100%;
