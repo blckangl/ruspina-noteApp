@@ -1,0 +1,32 @@
+#side-nav{
+  background-color: var(--side-nav-backgroundcolor);
+  width: var(--side-nav-width);
+  height: 100%;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .footer{
+    width: 100%;
+    .action-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: #232526;
+      padding: 6px;
+      .action{
+        background-color: white;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

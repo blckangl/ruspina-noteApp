@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+
+
+  --top-nav-backgroundcolor : #424242;
+  --top-nav-height:50px;
+
+  --side-nav-backgroundcolor: #151517;
+  --side-nav-width:300px;
+
+  --primary-color:#4A148C;
+  --warning-color: #B71C1C;
+  box-sizing:border-box;
+}

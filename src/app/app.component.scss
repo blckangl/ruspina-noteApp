@@ -1,0 +1,11 @@
+.main-content{
+  display: flex;
+  height: calc(100vh - var(--top-nav-height));
+  width: 100vw;
+
+  main{
+    width: 100vw;
+    max-height: calc(100vh - var(--top-nav-height));
+    overflow: hidden;
+  }
+}
