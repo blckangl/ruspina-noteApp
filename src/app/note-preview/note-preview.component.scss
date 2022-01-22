@@ -27,8 +27,14 @@ padding: 8px;
       }
     }
   }
-  .note{
+  .note-container{
     background-color: #C4C4C4;
     padding: 16px;
-  }
+    display: flex;
+    justify-content: space-between;
+  }& .checked{
+  background-color: #2e7d32 !important;
+  color: white;
+     }
+
 }

@@ -9,6 +9,7 @@ import { NoteInputComponent } from './note-input/note-input.component';
 import { NoteListComponent } from './note-list/note-list.component';
 import { NotePreviewComponent } from './note-preview/note-preview.component';
 import {FormsModule} from "@angular/forms";
+import { CheckedNoteDirective } from './checked-note.directive';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {FormsModule} from "@angular/forms";
     SideNavComponent,
     NoteInputComponent,
     NoteListComponent,
-    NotePreviewComponent
+    NotePreviewComponent,
+    CheckedNoteDirective
   ],
   imports: [
     BrowserModule,

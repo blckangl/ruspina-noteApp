@@ -6,7 +6,10 @@
       <div class="action warning"></div>
     </div>
   </div>
-  <div class="note">
-    {{note.title}}
+  <div class="note-container" [ngClass]="{'checked':note.isDone}" >
+   <div class="note">
+     {{note.title}}
+   </div>
+    <input [appCheckedNote]="'true'"  type="checkbox">
   </div>
 </section>
