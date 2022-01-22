@@ -5,8 +5,8 @@
   <div class="main-content">
     <app-side-nav></app-side-nav>
     <main>
-      <app-note-input></app-note-input>
-      <app-note-list></app-note-list>
+      <app-note-input (onNoteAdded)="addNote($event)"></app-note-input>
+      <app-note-list [notes]="noteList" ></app-note-list>
     </main>
   </div>
 </section>

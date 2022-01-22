@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Note} from "../shared/interfaces/note";
 
 @Component({
   selector: 'app-note-preview',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotePreviewComponent implements OnInit {
 
+  @Input() note!:Note;
   constructor() { }
 
   ngOnInit(): void {

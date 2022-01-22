@@ -8,6 +8,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { NoteInputComponent } from './note-input/note-input.component';
 import { NoteListComponent } from './note-list/note-list.component';
 import { NotePreviewComponent } from './note-preview/note-preview.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { NotePreviewComponent } from './note-preview/note-preview.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
 
   ],
   providers: [],

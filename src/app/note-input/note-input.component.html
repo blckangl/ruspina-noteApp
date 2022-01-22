@@ -1,15 +1,15 @@
 <section id="note-input-container">
   <div class="inputs">
-   <div class="title-input">
-     <input placeholder="title" type="text">
-   </div>
+    <div class="title-input">
+      <input #noteTitleInput placeholder="title" type="text">
+    </div>
     <div class="content-input">
-      <input placeholder="content" type="text">
+      <input #noteContentInput placeholder="content" type="text">
     </div>
   </div>
   <div class="actions">
     <div class="action">
-      <button>Add</button>
+      <button  (click)="addNote(noteTitleInput.value,noteContentInput.value)">Add</button>
     </div>
   </div>
 </section>

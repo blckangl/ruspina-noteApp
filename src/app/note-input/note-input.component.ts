@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Note} from "../shared/interfaces/note";
 
 @Component({
   selector: 'app-note-input',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoteInputComponent implements OnInit {
 
-  constructor() { }
+  @Output() onNoteAdded: EventEmitter<Note> = new EventEmitter<any>()
+
+
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  addNote(title:string,content:string) {
+
+    this.onNoteAdded.emit({id: 0, title: title, content:content, isDone: false})
   }
 
 }
